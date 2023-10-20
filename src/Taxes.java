@@ -9,14 +9,14 @@ public class Taxes {
         int[] outSalary = checkBracket(salary);
         int taxTotal = 0;
 
-        System.out.println(outSalary[0]);
-        System.out.println(outSalary[1]);
-        System.out.println(outSalary[2]);
-        System.out.println(outSalary[3]);
+//        System.out.println(outSalary[0]);
+//        System.out.println(outSalary[1]);
+//        System.out.println(outSalary[2]);
+//        System.out.println(outSalary[3]);
 
         int takeHome = calcTakeHome(outSalary);
 
-        System.out.println(takeHome);
+        System.out.println("Take home pay is:" + takeHome);
         //
         // Enter function to calculate tax and return tax rate here
         //
@@ -53,7 +53,7 @@ public class Taxes {
         int difference;
 
         if (salary >= 45000) {
-            diffAndBracket[0] = salary;
+            diffAndBracket[0] = salary - 45000;
         }
 
         for (int i = 0; i< brackets.length; i++){
@@ -69,9 +69,6 @@ public class Taxes {
 
             }
         }
-
-        System.out.println("hello");
-
         diffAndBracket[2] = taxTotal;
 
         return diffAndBracket;
@@ -80,6 +77,11 @@ public class Taxes {
     public static int calcTakeHome (int[] diffAndBracket) {
         double[] taxPercentages = {0.0, 0.1, 0.15, 0.2, 0.25};
         int taxTotal = diffAndBracket[2];
+
+        System.out.println(diffAndBracket[0]);
+        System.out.println(diffAndBracket[1]);
+        System.out.println(diffAndBracket[2]);
+        System.out.println(diffAndBracket[3]);
 
         int taxCalc = (int)Math.round((diffAndBracket[0] * taxPercentages[diffAndBracket[1]]));
 
