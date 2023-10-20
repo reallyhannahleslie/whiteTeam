@@ -11,9 +11,9 @@ public class TaxesTest {
     // Rejects negative values
     // Rejects no input
 
-    float TestArrayInt[] =      {0, 7000, 17000, 25000, 35000, 50000, 19999, 20001}
-    float TestArrayIntExpected[] = {0, 7000, 16800, 23750, 32000, 43750, }
-    String TestArrayString[] = {"Forty"}
-    float TestArrayNegative[] = {-1}
+//    float TestArrayInt[] =      {0, 7000, 17000, 25000, 35000, 50000, 19999, 20001}
+//    float TestArrayIntExpected[] = {0, 7000, 16800, 23750, 32000, 43750, }
+//    String TestArrayString[] = {"Forty"}
+//    float TestArrayNegative[] = {-1}
 
 }
