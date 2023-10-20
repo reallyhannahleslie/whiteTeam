@@ -10,7 +10,8 @@ public class Taxes {
         int[] outSalary = checkBracket(salary);
         int takeHome = calcTakeHome(outSalary);
 
-        System.out.println("Take home pay is:" + takeHome);
+        System.out.println("Take home pay is: " + takeHome);
+        System.out.println("The tax ammount is: " + (salary - takeHome));
     }
 
 
