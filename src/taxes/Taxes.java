@@ -30,9 +30,9 @@ public class Taxes {
 //        if (userIncome <= taxBracket1)
 //            tax=taxPercent1;
 //        else if (userIncome <= taxBracket2)
-//            tax= (int) ((taxBracket1*taxPercent1)+(userIncome*0.1));
-//        else if (UserIncome <= 29999)
-//            tax= (int) ((userIncome-29999)*0.2)+()
+//            tax= (int) ((taxBracket1*taxPercent1)+(userIncome*taxPercent2));
+//        else if (UserIncome <= taxBracket3)
+//            tax= (int) ((int j (userIncome-taxBracket3)*taxPercent3)+()
 //
 //    }
 
@@ -54,8 +54,6 @@ public class Taxes {
         difference = salary-45000;
         return difference, i;
     }
-
-
 
 
 }
