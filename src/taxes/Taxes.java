@@ -13,6 +13,7 @@ public class Taxes {
         System.out.println("Take home pay is:" + takeHome);
     }
 
+
     public static int[] checkBracket (int salary){
         int[][] brackets = {{0, 14999, 0}, {15000, 19999, 500}, {20000, 29999, 1500}, {30000, 44999, 3000}};
         int[] diffAndBracket = {0,4,0, salary};
